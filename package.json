@@ -17,7 +17,7 @@
     "check-types": "tsc --noEmit",
     "dev": "next dev",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "eslint ."
   },
   "dependencies": {
     "@anthropic-ai/sdk": "latest",
