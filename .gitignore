@@ -1,0 +1,10 @@
+node_modules/
+.env
+.DS_Store
+
+# The library is yours, not the tool's. Keep it out of the repo by default.
+# If you want it versioned, delete the next line and commit library/ instead.
+library/
+
+# Hand-written sample data, for looking at the interface without an API key.
+.demo-library/

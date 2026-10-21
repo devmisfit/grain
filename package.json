@@ -1,0 +1,30 @@
+{
+  "name": "grain",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "A taste library. Save design references, extract what makes them work, compose them back into prompts and tokens.",
+  "scripts": {
+    "grain": "bun run src/cli.ts",
+    "add": "bun run src/cli.ts add",
+    "ingest": "bun run src/cli.ts ingest",
+    "build": "bun run src/cli.ts build",
+    "serve": "bun run src/cli.ts serve",
+    "demo": "GRAIN_LIBRARY=.demo-library bun run src/cli.ts serve",
+    "list": "bun run src/cli.ts list",
+    "brief": "bun run src/cli.ts brief",
+    "setup:browser": "bunx playwright install chromium",
+    "check-types": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "latest",
+    "geist": "^1.7.2"
+  },
+  "optionalDependencies": {
+    "playwright": "latest"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "typescript": "^5"
+  }
+}

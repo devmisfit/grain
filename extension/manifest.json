@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "grain",
+  "version": "0.1.0",
+  "description": "Save the current page to your grain taste library, with its real design tokens.",
+  "permissions": ["activeTab", "scripting", "storage"],
+  "host_permissions": ["http://localhost/*", "http://127.0.0.1/*"],
+  "background": { "service_worker": "background.js" },
+  "action": { "default_title": "Save to grain" },
+  "options_page": "options.html",
+  "commands": {
+    "capture": {
+      "suggested_key": { "default": "Ctrl+Shift+S", "mac": "Command+Shift+S" },
+      "description": "Save this page to grain"
+    }
+  }
+}
